@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white min-h-screen flex justify-center items-center">
+   
+    <div class="w-[960px] flex gap-8">
+        <!-- Order Summary Section -->
+        <h1><i class="fas fa-arrow-left text-white mr-4 cursor-pointer mb-1"></i></h1>
+        <div class="w-[50%] bg-black p-6">
+            <h2 class="text-lg font-bold mb-4">Order Summary</h2>
+
+            <!-- Product List -->
+            <div class="mb-6">
+                <!-- Product 1 -->
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center gap-4">
+                        <img src="/Decade Collector/assets/images/Avenger/HulkBuster.png" alt="Black Panther" class="w-16 h-16">
+                        <div>
+                            <p class="font-medium">Black Panther</p>
+                            <p class="text-sm text-gray-400 flex items-center gap-2">
+                                <button class="border border-gray-500 px-2 py-1">-</button>
+                                <span>1</span>
+                                <button class="border border-gray-500 px-2 py-1">+</button>
+                            </p>
+                        </div>
+                    </div>
+                    <p>$65.00</p>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <img src="https://placehold.co/60x60" alt="Thanos Power" class="w-16 h-16">
+                        <div>
+                            <p class="font-medium">Thanos Power</p>
+                            <p class="text-sm text-gray-400 flex items-center gap-2">
+                                <button class="border border-gray-500 px-2 py-1">-</button>
+                                <span>2</span>
+                                <button class="border border-gray-500 px-2 py-1">+</button>
+                            </p>
+                        </div>
+                    </div>
+                    <p>$95.00</p>
+                </div>
+            </div>
+
+            <!-- Discount Section -->
+            <div class="flex items-center gap-4 mb-6">
+                <input type="text" placeholder="Gift Card / Discount code"
+                    class="flex-1 bg-gray-900 text-white px-4 py-2 border border-gray-600">
+                <button class="bg-[#38A93B] px-4 py-2 text-white font-medium">Apply</button>
+            </div>
+
+            <!-- Summary Details -->
+            <div class="text-sm space-y-2">
+                <div class="flex justify-between">
+                    <p>Subtotal</p>
+                    <p>$160.00</p>
+                </div>
+                <div class="flex justify-between">
+                    <p>Sales tax (6.5%)</p>
+                    <p>$4.23</p>
+                </div>
+                <div class="flex justify-between">
+                    <p>Shipping Fee</p>
+                    <p class="text-green-500">FREE</p>
+                </div>
+                <div class="flex justify-between font-bold text-lg">
+                    <p>Total due</p>
+                    <p>$164.23</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Payment Methods Section -->
+        <div class="w-[50%] bg-black p-6">
+            <!-- Steps -->
+            <div class="flex justify-between items-center text-gray-400 mb-6">
+                <span class="text-blue-500">Shipping</span>
+                <span class="text-gray-600">—</span>
+                <span class="text-blue-500">Delivery</span>
+                <span class="text-gray-600">—</span>
+                <span class="text-white">Payment</span>
+            </div>
+
+            <!-- Payment Methods -->
+            <h2 class="text-lg font-bold mb-4">Payment Methods</h2>
+            <form class="space-y-4">
+                <label class="flex items-center gap-4">
+                    <input type="radio" name="payment" class="accent-blue-500">
+                    <div>
+                        <p>Pay on Delivery</p>
+                        <p class="text-sm text-gray-400">Pay with cash on delivery</p>
+                    </div>
+                </label>
+                <label class="flex items-center gap-4">
+                    <input type="radio" name="payment" class="accent-blue-500">
+                    <div>
+                        <p>Credit/Debit Cards</p>
+                        <p class="text-sm text-gray-400">Pay with your Credit / Debit Card</p>
+                    </div>
+                    <div class="ml-auto flex gap-2">
+                        <i class="fab fa-cc-visa text-white"></i>
+                        <i class="fab fa-cc-mastercard text-white"></i>
+                        <i class="fab fa-cc-amex text-white"></i>
+                    </div>
+                </label>
+                <label class="flex items-center gap-4">
+                    <input type="radio" name="payment" class="accent-blue-500">
+                    <div>
+                        <p>Direct Bank Transfer</p>
+                        <p class="text-sm text-gray-400">Make payment directly through bank account.</p>
+                    </div>
+                </label>
+                <label class="flex items-center gap-4">
+                    <input type="radio" name="payment" class="accent-blue-500">
+                    <div>
+                        <p>Other Payment Methods</p>
+                        <p class="text-sm text-gray-400">Make payment through Gpay, Paypal, Paytm etc</p>
+                    </div>
+                    <div class="ml-auto flex gap-2">
+                        <i class="fab fa-google-pay text-white"></i>
+                        <i class="fab fa-paypal text-white"></i>
+                        <i class="fab fa-cc-paypal text-white"></i>
+                    </div>
+                </label>
+            </form>
+
+            <!-- Buttons -->
+            <div class="flex justify-between mt-6">
+                <button class="px-6 py-2 border
