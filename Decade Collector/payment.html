@@ -16,100 +16,136 @@
     </style>
 </head>
 
-<body class="bg-black text-white min-h-screen flex justify-center items-center">
+<body class="bg-[#06070D] text-white ">
    
-    <div class="w-[960px] flex gap-8">
-        <!-- Order Summary Section -->
-        <h1><i class="fas fa-arrow-left text-white mr-4 cursor-pointer mb-1"></i></h1>
-        <div class="w-[50%] bg-black p-6">
-            <h2 class="text-lg font-bold mb-4">Order Summary</h2>
-
-            <!-- Product List -->
-            <div class="mb-6">
-                <!-- Product 1 -->
-                <div class="flex items-center justify-between mb-4">
-                    <div class="flex items-center gap-4">
-                        <img src="/Decade Collector/assets/images/Avenger/HulkBuster.png" alt="Black Panther" class="w-16 h-16">
-                        <div>
-                            <p class="font-medium">Black Panther</p>
-                            <p class="text-sm text-gray-400 flex items-center gap-2">
-                                <button class="border border-gray-500 px-2 py-1">-</button>
-                                <span>1</span>
-                                <button class="border border-gray-500 px-2 py-1">+</button>
-                            </p>
-                        </div>
-                    </div>
-                    <p>$65.00</p>
-                </div>
-
-                <!-- Product 2 -->
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center gap-4">
-                        <img src="https://placehold.co/60x60" alt="Thanos Power" class="w-16 h-16">
-                        <div>
-                            <p class="font-medium">Thanos Power</p>
-                            <p class="text-sm text-gray-400 flex items-center gap-2">
-                                <button class="border border-gray-500 px-2 py-1">-</button>
-                                <span>2</span>
-                                <button class="border border-gray-500 px-2 py-1">+</button>
-                            </p>
-                        </div>
-                    </div>
-                    <p>$95.00</p>
-                </div>
-            </div>
-
-            <!-- Discount Section -->
-            <div class="flex items-center gap-4 mb-6">
-                <input type="text" placeholder="Gift Card / Discount code"
-                    class="flex-1 bg-gray-900 text-white px-4 py-2 border border-gray-600">
-                <button class="bg-[#38A93B] px-4 py-2 text-white font-medium">Apply</button>
-            </div>
-
-            <!-- Summary Details -->
-            <div class="text-sm space-y-2">
-                <div class="flex justify-between">
-                    <p>Subtotal</p>
-                    <p>$160.00</p>
-                </div>
-                <div class="flex justify-between">
-                    <p>Sales tax (6.5%)</p>
-                    <p>$4.23</p>
-                </div>
-                <div class="flex justify-between">
-                    <p>Shipping Fee</p>
-                    <p class="text-green-500">FREE</p>
-                </div>
-                <div class="flex justify-between font-bold text-lg">
-                    <p>Total due</p>
-                    <p>$164.23</p>
-                </div>
-            </div>
+    <div class="max-w-7xl mx-auto pt-8 flex">
+        <!-- Order Summary -->
+      <div class="w-1/2 border-r border-gray-700 pr-8 mx-5">
+        <div class="flex mb-6 gap-40">
+          <a href="./home.html">
+            <i
+              class="fas fa-arrow-left text-white mr-4 cursor-pointer mb-1 top-0"
+            ></i
+          ></a>
+          <!-- <img
+            src="./assets/images/Logo-White.png"
+            alt="Decade Collector Logo"
+            class="h-24 top-0"
+          /> -->
+          <h2 class="text-xl font-semibold mb-6">Order Summary</h2>
         </div>
+        <!-- Item 1 -->
+        <div class="mb-4 flex items-center justify-between mx-5">
+          <div class="flex gap-5">
+            <img
+              src="./assets/images/Avenger/HulkBuster.png"
+              alt=""
+              class="w-[80px] h-[80px] mr-4"
+            />
+            <div class="justify-items-start">
+              <p>Black Panther</p>
+              <div class="flex items-center text-gray-300 mt-4">
+                <button class="px-2 py-1 bg-gray-800 rounded-l">-</button>
+                <span class="px-2 py-1 bg-gray-700">1</span>
+                <button class="px-2 py-1 bg-gray-800 rounded-r">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="justify-items-center">
+            <p class="text-sm text-white">$65.00</p>
+            <i class="fas fa-trash mt-5"></i>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="mb-4 flex items-center justify-between mx-5">
+          <div class="flex gap-5">
+            <img
+              src="./assets/images/Kamen Rider/Deacde.png"
+              alt=""
+              class="w-[80px] h-[80px] mr-4"
+            />
+            <div class="justify-items-start">
+              <p>Black Panther</p>
+              <div class="flex items-center text-gray-300 mt-4">
+                <button class="px-2 py-1 bg-gray-800 rounded-l">-</button>
+                <span class="px-2 py-1 bg-gray-700">2</span>
+                <button class="px-2 py-1 bg-gray-800 rounded-r">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="justify-items-center">
+            <p class="text-sm text-white">$95.00</p>
+            <i class="fas fa-trash mt-5"></i>
+          </div>
+        </div>
+        <!-- Discount Code -->
+        <div class="mb-4 mx-5">
+          <label for="discount-code" class="block text-sm font-medium mb-1"
+            >Gift Card / Discount code</label
+          >
+          <div class="flex items-center gap-3 mb-6">
+            <input
+              type="text"
+              id="discount-code"
+              class="w-full bg-gray-800 border border-gray-700 text-white rounded-l px-3 py-2"
+            />
+            <button class="px-4 py-2 bg-[#38A93B] text-white rounded-r">
+              Apply
+            </button>
+          </div>
+        </div>
+        <!-- Pricing Details -->
+        <div class="text-sm mb-2 mx-5">
+          <div class="flex justify-between">
+            <span>Subtotal</span>
+            <span>$160.00</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Sales tax (6.5%)</span>
+            <span>$4.23</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Shipping Fee</span>
+            <span class="text-[#38A93B]">FREE</span>
+          </div>
+        </div>
+        <div class="flex justify-between text-lg font-semibold mx-5">
+          <span>Total due</span>
+          <span class="text-blue-500">$164.23</span>
+        </div>
+      </div>
 
         <!-- Payment Methods Section -->
-        <div class="w-[50%] bg-black p-6">
+        <div class="w-1/2 pl-8">
             <!-- Steps -->
-            <div class="flex justify-between items-center text-gray-400 mb-6">
-                <span class="text-blue-500">Shipping</span>
-                <span class="text-gray-600">—</span>
-                <span class="text-blue-500">Delivery</span>
-                <span class="text-gray-600">—</span>
-                <span class="text-white">Payment</span>
-            </div>
+            <div class="mb-6 flex items-center text-gray-300 justify-between">
+          <span class="mr-4 text-[#38A93B]">Shipping</span>
+          <div class="text-[#38A93B]">
+            <i class="fa-solid fa-minus fa-lg "></i>
+            <i class="fa-solid fa-circle-check fa-lg"></i>
+            <i class="fa-solid fa-minus fa-lg"></i>
+          </div>
+          <span class="text-[#38A93B]">Delivery</span>
+          <div>
+            <i class="fa-solid fa-minus fa-lg"></i>
+            <i class="fa-solid fa-circle-check fa-lg"></i>
+            <i class="fa-solid fa-minus fa-lg"></i>
+          </div>
+          <span>Payment</span>
+        </div>
 
             <!-- Payment Methods -->
             <h2 class="text-lg font-bold mb-4">Payment Methods</h2>
             <form class="space-y-4">
                 <label class="flex items-center gap-4">
-                    <input type="radio" name="payment" class="accent-blue-500">
+                    <input type="radio" name="payment" class="accent-[#38A93B]">
                     <div>
                         <p>Pay on Delivery</p>
                         <p class="text-sm text-gray-400">Pay with cash on delivery</p>
                     </div>
                 </label>
                 <label class="flex items-center gap-4">
-                    <input type="radio" name="payment" class="accent-blue-500">
+                    <input type="radio" name="payment" class="accent-[#38A93B]">
                     <div>
                         <p>Credit/Debit Cards</p>
                         <p class="text-sm text-gray-400">Pay with your Credit / Debit Card</p>
@@ -121,14 +157,14 @@
                     </div>
                 </label>
                 <label class="flex items-center gap-4">
-                    <input type="radio" name="payment" class="accent-blue-500">
+                    <input type="radio" name="payment" class="accent-[#38A93B]">
                     <div>
                         <p>Direct Bank Transfer</p>
                         <p class="text-sm text-gray-400">Make payment directly through bank account.</p>
                     </div>
                 </label>
                 <label class="flex items-center gap-4">
-                    <input type="radio" name="payment" class="accent-blue-500">
+                    <input type="radio" name="payment" class="accent-[#38A93B]">
                     <div>
                         <p>Other Payment Methods</p>
                         <p class="text-sm text-gray-400">Make payment through Gpay, Paypal, Paytm etc</p>
