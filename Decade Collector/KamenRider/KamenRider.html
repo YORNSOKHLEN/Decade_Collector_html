@@ -38,7 +38,7 @@
         class="w-10 h-10 rounded-full mx-10"
       />
     </header>
-    <div class="w-full mt-[90px] flex justify-between">
+    <nav class="w-full mt-[90px] flex justify-between">
       <div
         class="fixed bg-[#06070C] w-[60px] h-screen border-r-2 border-[#ffffff] border-opacity-45"
       >
@@ -62,19 +62,19 @@
         </div>
       </div>
       <div class="w-full ml-[60px]">
-        <div class="bg-[#16191E] top-0 py-3">
+        <span class="bg-[#16191E] top-0 py-3">
           <h1 class="mx-7 text-2xl uppercase">Kamen Rider</h1>
-        </div>
+        </span>
         <!-- Menu Items -->
         <div class="flex space-x-8 uppercase text-xl mx-7 py-3 items-center">
           <!-- Dropdown Menu -->
           <div class="group">
-            <a
-              href="../KamenRider/KamenRider.html"
-              class="hover:text-[#38A93B] group-hover:text-[#38A93B] flex items-center"
+            <div
+              class="flex gap-2 items-center hover:text-[#38A93B] group-hover:text-[#38A93B]"
             >
-              Kamen Rider
-            </a>
+              <a href="../KamenRider/KamenRider.html" class=""> Kamen Rider </a>
+              <i class="fas fa-chevron-down"></i>
+            </div>
             <!-- Dropdown Content -->
             <div
               class="absolute mt-0 left-[65px] bg-[#16191E] hidden group-hover:block shadow-lg rounded-lg p-4 gap-5 w-auto h-auto"
@@ -89,13 +89,13 @@
                     Kamen Rider Gavv
                   </a>
                   <a
-                    href="#kamen-rider-gotchard"
+                    href="./KamenRiderGotchard.html"
                     class="block px-2 py-1 hover:text-[#38A93B] rounded"
                   >
                     Kamen Rider Gotchard
                   </a>
                   <a
-                    href="#kamen-rider-geats"
+                    href="./KamenRiderGeats.html"
                     class="block px-2 py-1 hover:text-[#38A93B] rounded"
                   >
                     Kamen Rider Geats
@@ -104,20 +104,20 @@
                 <!-- Column 2 -->
                 <div class="mb-2">
                   <a
-                    href="#kamen-rider-revice"
+                    href="./KamenRiderRevice.html"
                     class="block px-2 py-1 hover:text-[#38A93B] rounded"
                   >
                     Kamen Rider Revice
                   </a>
                   <a
-                    href="#kamen-rider-saber"
+                    href="./KamenRiderSaber.html"
                     class="block px-2 py-1 hover:text-[#38A93B] rounded"
                   >
                     Kamen Rider Saber
                   </a>
 
                   <a
-                    href="#kamen-rider-zero-one"
+                    href="./KamenRiderZero-One.html"
                     class="block px-2 py-1 hover:text-[#38A93B] rounded"
                   >
                     Kamen Rider Zero One
@@ -140,15 +140,15 @@
             <a href="#" class="hover:text-[#38A93B]">Jujutsu Kaisen</a>
           </div>
           <div class="group">
-            <a
-              href="#"
-              class="hover:text-[#38A93B] group-hover:text-[#38A93B] flex items-center"
+            <div
+              class="flex gap-2 items-center hover:text-[#38A93B] group-hover:text-[#38A93B]"
             >
-              Marvel universe
-            </a>
+              <a href="#" class=""> Marvel universe </a>
+              <i class="fas fa-chevron-down"></i>
+            </div>
             <!-- Dropdown Content -->
             <div
-              class="absolute mt-0 left-[570px] bg-[#16191E] hidden group-hover:block shadow-lg rounded-lg p-4 gap-5 w-auto h-auto"
+              class="absolute mt-0 right-[117px] bg-[#16191E] hidden group-hover:block shadow-lg rounded-lg p-4 gap-5 w-auto h-auto"
             >
               <div class="flex text-lg">
                 <!-- Column 1 -->
@@ -222,15 +222,15 @@
             </div>
           </div>
           <div class="group">
-            <a
-              href="#"
-              class="hover:text-[#38A93B] group-hover:text-[#38A93B] flex items-center"
+            <div
+              class="flex gap-2 items-center hover:text-[#38A93B] group-hover:text-[#38A93B]"
             >
-              Dc Universe
-            </a>
+              <a href="#" class=""> Dc Universe </a>
+              <i class="fas fa-chevron-down"></i>
+            </div>
             <!-- Dropdown Content -->
             <div
-              class="absolute mt-0 right-[400px] bg-[#16191E] hidden group-hover:block shadow-lg rounded-lg p-4 gap-5 w-auto h-auto"
+              class="absolute mt-0 right-[320px] bg-[#16191E] hidden group-hover:block shadow-lg rounded-lg p-4 gap-5 w-auto h-auto"
             >
               <div class="flex text-lg">
                 <div>
@@ -280,15 +280,15 @@
             </div>
           </div>
           <div class="group">
-            <a
-              href="#"
-              class="hover:text-[#38A93B] group-hover:text-[#38A93B] flex items-center"
+            <div
+              class="flex gap-2 items-center hover:text-[#38A93B] group-hover:text-[#38A93B]"
             >
-              Super Sentai
-            </a>
+              <a href="#" class=""> Super Sentai </a>
+              <i class="fas fa-chevron-down"></i>
+            </div>
             <!-- Dropdown Content -->
             <div
-              class="absolute mt-0 right-60 bg-[#16191E] hidden group-hover:block shadow-lg rounded-lg p-4 gap-5 w-auto h-auto"
+              class="absolute mt-0 right-36 bg-[#16191E] hidden group-hover:block shadow-lg rounded-lg p-4 gap-5 w-auto h-auto"
             >
               <div class="flex text-lg">
                 <div>
@@ -358,14 +358,17 @@
             all your favorite Kamen Rider series!
           </p>
         </div>
-        <section class="mt-4 mx-7 grid grid-cols-3 gap-4 uppercase">
+
+        <section class="mt-4 mx-7 grid grid-cols-3 gap-7 uppercase">
           <div class="border-b-2 mt-5">
-            <a href="./KamenRiderGavv.html"
-              ><img
-                src="../assets/images/KamenRider/KRGavv/logoGavv.png"
-                alt="Product 1"
-                class="w-[400px] h-[220px] mb-2 rounded-lg"
-            /></a>
+            <span>
+              <a href="./KamenRiderGavv.html"
+                ><img
+                  src="../assets/images/KamenRider/KRGavv/logoGavv.png"
+                  alt="Product 1"
+                  class="w-[400px] h-[220px] mb-2 rounded-lg shadow-md"
+              /></a>
+            </span>
             <span class="flex justify-between">
               <a href="./KamenRiderGavv.html" class="hover:text-[#38A93B]"
                 >Kamen Rider Gavv</a
@@ -408,49 +411,55 @@
             </span>
           </div>
           <div class="border-b-2 mt-5">
-            <a href="#"
+            <a href="./KamenRiderRevice.html"
               ><img
                 src="../assets/images/KamenRider/Revice/logoRevice.png"
                 alt="Product 1"
                 class="w-[400px] h-[220px] mb-2 rounded-lg"
             /></a>
             <span class="flex justify-between">
-              <a href="#" class="hover:text-[#38A93B]">Kamen Rider Revice</a>
-              <a href="#"
+              <a href="./KamenRiderRevice.html" class="hover:text-[#38A93B]"
+                >Kamen Rider Revice</a
+              >
+              <a href="./KamenRiderRevice.html"
                 ><i class="fas fa-arrow-right hover:text-[#38A93B]"></i
               ></a>
             </span>
           </div>
           <div class="border-b-2 mt-5">
-            <a href="#"
+            <a href="./KamenRiderSaber.html"
               ><img
                 src="../assets/images/KamenRider/Saber/logoSaber.png"
                 alt="Product 1"
                 class="w-[400px] h-[220px] mb-2 rounded-lg"
             /></a>
             <span class="flex justify-between">
-              <a href="#" class="hover:text-[#38A93B]">Kamen Rider Saber</a>
-              <a href="#"
+              <a href="./KamenRiderSaber.html" class="hover:text-[#38A93B]"
+                >Kamen Rider Saber</a
+              >
+              <a href="./KamenRiderSaber.html"
                 ><i class="fas fa-arrow-right hover:text-[#38A93B]"></i
               ></a>
             </span>
           </div>
           <div class="border-b-2 mt-5">
-            <a href="#"
+            <a href="./KamenRiderZero-One.html"
               ><img
                 src="../assets/images/KamenRider/Zero-One/logoZero-One.png"
                 alt="Product 1"
                 class="w-[400px] h-[220px] mb-2 rounded-lg"
             /></a>
             <span class="flex justify-between">
-              <a href="#" class="hover:text-[#38A93B]">Kamen Rider Zero-One</a>
-              <a href="#"
+              <a href="./KamenRiderZero-One.html" class="hover:text-[#38A93B]"
+                >Kamen Rider Zero-One</a
+              >
+              <a href="./KamenRiderZero-One.html"
                 ><i class="fas fa-arrow-right hover:text-[#38A93B]"></i
               ></a>
             </span>
           </div>
         </section>
-        <section class="mt-4 mx-7 grid grid-cols-3 gap-4 uppercase">
+        <section class="mt-4 mx-7 grid grid-cols-3 gap-7 uppercase">
           <div class="border-b-2 mt-5">
             <a href="#"
               ><img
@@ -536,7 +545,7 @@
             </span>
           </div>
         </section>
-        <section class="mt-4 mx-7 grid grid-cols-3 gap-4 uppercase">
+        <section class="mt-4 mx-7 grid grid-cols-3 gap-7 uppercase">
           <div class="border-b-2 mt-5">
             <a href="#"
               ><img
@@ -622,7 +631,7 @@
             </span>
           </div>
         </section>
-        <section class="mt-4 mx-7 grid grid-cols-3 gap-4 uppercase">
+        <section class="mt-4 mx-7 grid grid-cols-3 gap-7 uppercase">
           <div class="border-b-2 mt-5">
             <a href="#"
               ><img
@@ -708,7 +717,7 @@
             </span>
           </div>
         </section>
-        <section class="mt-4 mx-7 grid grid-cols-3 gap-4 uppercase">
+        <section class="mt-4 mx-7 grid grid-cols-3 gap-7 uppercase">
           <div class="border-b-2 mt-5">
             <a href="#"
               ><img
@@ -848,6 +857,6 @@
           </div>
         </footer>
       </div>
-    </div>
+    </nav>
   </body>
 </html>
