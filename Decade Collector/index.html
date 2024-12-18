@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -12,7 +13,7 @@
   </head>
   <body class="bg-[#06070C] text-white">
     <header
-      class="bg-[#06070D] fixed flex top-0 left-0 justify-between items-center w-full"
+    class="bg-[#06070D] fixed top-0 left-0 w-full z-20 flex justify-between items-center""
     >
       <div class="flex justify-between gap-10 items-center w-1/2 mx-4">
         <img src="./assets/icon/sort.png" alt="Menu" />
@@ -347,7 +348,7 @@
         </div>
         <div
           id="default-carousel"
-          class="relative w-full"
+          class="relative w-full z-10"
           data-carousel="slide"
         >
           <!-- Carousel wrapper -->
@@ -357,43 +358,50 @@
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <img
-                src="assets/images/KamenRider/AllKamenRider.jpg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                src="./assets/images/KamenRider/AllKamenRider.jpg"
+                class="absolute rounded-lg block w-[1230px] h-[500px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="..."
               />
             </div>
             <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="hidden z-0 duration-700 ease-in-out" data-carousel-item>
               <img
-                src="./assets/images/KamenRider/AllKamenRider.jpg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                src="./assets/images/DemonSlayer/AllDemonSlayer.png"
+                class="absolute rounded-lg block w-[1230px] h-[500px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="..."
               />
             </div>
             <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="hidden z-0 duration-700 ease-in-out" data-carousel-item>
               <img
-                src="./assets/images/KamenRider/AllKamenRider.jpg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                src="./assets/images/JujutsuKaisen/AllJujutsuKaisen.png"
+                class="absolute rounded-lg block w-[1230px] h-[500px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="..."
               />
             </div>
             <!-- Item 4 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="hidden z-0 duration-700 ease-in-out" data-carousel-item>
               <img
-                src="./assets/images/KamenRider/AllKamenRider.jpg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                src="./assets/images/MCU/AllMCU.png"
+                class="absolute rounded-lg block w-[1230px] h-[500px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="..."
               />
             </div>
             <!-- Item 5 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="hidden z-0 duration-700 ease-in-out" data-carousel-item>
               <img
-                src="./assets/images/KamenRider/AllKamenRider.jpg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                src="./assets/images/DCU/AllDCU.png"
+                class="absolute rounded-lg block w-[1230px] h-[500px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="..."
               />
             </div>
+             <!-- Item 6 -->
+            <div class="hidden z-0 duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./assets/images/SuperSentai/AllSuperSentai.png"
+                class="absolute rounded-lg block w-[1230px] h-[500px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."/>
+              </div>
           </div>
           <!-- Slider indicators -->
           <div
@@ -489,6 +497,7 @@
             </span>
           </button>
         </div>
+        <!-- Product -->
         <section class="mt-3 mx-7">
           <h2 class="text-2xl mb-4">Top Product</h2>
           <div class="grid grid-cols-5 gap-4 mx-2">
@@ -636,7 +645,7 @@
                 class="mb-1 p-4 shadow-sm rounded-lg bg-[#16191E] hover:shadow-white"
               >
                 <img
-                  src="./assets/images/Kamen Rider/Geast.png"
+                  src="./assets/images/KamenRider/Geast.png"
                   alt="Product 1"
                   class="w-25 h-[205px] mb-2 p-4 rounded-lg"
                 />
@@ -649,7 +658,7 @@
                 class="mb-1 p-4 shadow-sm rounded-lg bg-[#16191E] hover:shadow-white"
               >
                 <img
-                  src="./assets/images/Kamen Rider/Deacde.png"
+                  src="./assets/images/KamenRider/Decade/DeacdeDriver.png"
                   alt="Product 1"
                   class="w-25 h-[205px] mb-2 p-4 rounded-lg"
                 />
@@ -865,11 +874,12 @@
       </div>
     </div>
     <script>
-      const carouselItems = document.getElementById("carouselItems");
-      const prevButton = document.getElementById("prevButton");
-      const nextButton = document.getElementById("nextButton");
+      const carouselItems = document.querySelector("#default-carousel .z-0"); // Get the carousel container
+      const prevButton = document.querySelector("[data-carousel-prev]");
+      const nextButton = document.querySelector("[data-carousel-next]");
+
       let scrollAmount = 0;
-      const itemWidth = 200; // Adjust this value based on item width
+      const itemWidth = 200; // Adjust based on the item width
       const totalItems = carouselItems.children.length; // Get the total number of items
       const visibleItems = Math.floor(carouselItems.clientWidth / itemWidth); // Calculate how many items are visible
 
