@@ -54,6 +54,11 @@
           </a>
         </div>
         <div class="py-4 px-4">
+          <a href="#">
+            <i class="fas fa-basket-shopping text-[22px] text-[#38A93B]"></i>
+          </a>
+        </div>
+        <div class="py-4 px-4">
           <a href="#"
             ><img
               src="./assets/icon/information-button.png"
@@ -499,40 +504,48 @@
           </button>
         </div>
         <!-- Product -->
-        <section class="mt-3 mx-7">
-          <h2 class="text-2xl mb-4">Top Product</h2>
-          <div class="grid grid-cols-4 gap-10 mx-2">
-            <div
-              class="mb-1 p-10 shadow-md rounded-lg bg-[#16191E] hover:shadow-white"
+        <div class="my-7 mx-7">
+          <span class="text-xl">Top products</span>
+          <div class="mt-7 mx-2 grid grid-cols-4 gap-10">
+            <article
+              class="mb-7 hover:scale-105 transition-transform duration-300"
             >
-              <div class="w-full">
-                <a href="">
-                  <img
-                    src="./assets/images/KamenRider/Geats/Geast.png"
-                    alt="Product 1"
-                    class="mb-2 rounded-lg"
-                  />
-                </a>
+              <div
+                class="uppercase py-1 flex justify-center rounded-sm bg-[#38A93B]"
+              >
+                in stock
               </div>
               <div>
-                <p class="text-sm">DX Desire Driver</p>
+                <a href=""
+                  ><img
+                    src="./assets/images/KamenRider/Geats/Geast.png"
+                    alt=""
+                    class=""
+                /></a>
               </div>
-              <div class="flex justify-between items-center text-xl">
+              <div>
+                <span class="text-base text-gray-300">DX Desire Driver</span>
+              </div>
+              <div class="flex justify-between items-center mx-1 mt-5">
                 <div>
-                  <h3 class="font-bold">From $300</h3>
+                  <span class="font-bold text-2xl">$85.00</span>
                 </div>
-                <div>
-                  <button>
-                    <i class="fas fa-heart hover:text-[#38A93B]"></i>
-                  </button>
-                  <button>
-                    <i class="fas fa-link hover:text-[#38A93B]"></i>
-                  </button>
+                <div class="text-xl flex gap-2">
+                  <i class="fas fa-heart" onclick=""></i>
+                  <i class="fas fa-link" onclick=""></i>
                 </div>
               </div>
-            </div>
+              <div
+                class="mt-4 mx-1 items-center py-3 border-[1px] rounded-xl hover:border-[#38A93B] hover:text-[#38A93B]"
+              >
+                <a href="#" class="w-full flex justify-around uppercase"
+                  >Add to cart <i class="fas fa-basket-shopping"></i
+                ></a>
+              </div>
+            </article>
           </div>
-        </section>
+        </div>
+
         <section class="mt-3 mx-7">
           <h2 class="text-2xl mb-4">Accessory</h2>
           <div class="grid grid-cols-5 gap-4 mx-2">
@@ -550,9 +563,7 @@
               </div>
             </a>
             <a href="#">
-              <div
-                class="mb-1 p-4 shadow-sm rounded-lg bg-[#16191E] hover:shadow-white"
-              >
+              <div class="mb-1 p-4 shadow-sm rounded-lg bg-[#16191E]">
                 <img
                   src="./assets/images/KamenRider/Decade/DeacdeDriver.png"
                   alt="Product 1"
@@ -801,6 +812,8 @@
           behavior: "smooth",
         });
       });
+
+      // add favorite
     </script>
   </body>
 </html>
