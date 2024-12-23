@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camp Haven Checkout</title>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-[#06070C] text-white">
+    <header
+      class="flex bg-[#06070C] items-center justify-between p-8 mb-10 shadow-md border-b border-white"
+    >
+      <!-- Back to cart -->
+      <div class="flex items-center">
+        <a href="./homelogin.html" class="text-white text-sm">
+          <i class="fas fa-chevron-left mr-2"></i> Back to cart
+        </a>
+      </div>
+
+      <!-- Logo -->
+      <div class="absolute inset-x-0 flex justify-center">
+        <a href="">
+          <img
+            src="/Decade Collector/assets/images/Logo/Logo-White.png"
+            alt="Logo"
+            class="w-17 h-12"
+          />
+        </a>
+      </div>
+    </header>
+
+    <div class="w-full mx-auto py-8 px-28">
+      <!-- Main Content -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Left Section -->
+        <div class="lg:col-span-2 space-y-4">
+          <!-- Personal Information -->
+          <div class="">
+            <div
+              class="flex items-center justify-between p-4 bg-[#16191E] text-white rounded-t-lg"
+            >
+              <h2 class="text-sm font-bold">01. Personal Information</h2>
+              <button class="text-sm underline">Edit</button>
+            </div>
+            <div class="p-4">
+              <p class="text-sm">
+                Connected as
+                <a href="#" class="text-[#2786DD] underline">Mike Brown</a>.
+                <a href="#" class="text-blue-500 underline">Change account</a>
+              </p>
+              <p class="text-xs mt-1">
+                Note: Your cart will be emptied if you sign out
+              </p>
+              <a href="./order_sammary_2.html">
+                <button
+                  class="mt-4 bg-[#16191E] text-white text-sm font-bold py-2 px-4 rounded"
+                >
+                  Next step
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- Steps -->
+          <button
+            class="w-full text-left p-4 bg-[#16191E] text-sm font-bold rounded-lg"
+          >
+            02. Addresses
+          </button>
+          <button
+            class="w-full text-left p-4 bg-[#16191E] text-sm font-bold rounded-lg"
+          >
+            03. Delivery Method
+          </button>
+          <button
+            class="w-full text-left p-4 bg-[#16191E] text-sm font-bold rounded-lg"
+          >
+            04. Payment
+          </button>
+        </div>
+
+        <!-- Right Section -->
+        <div>
+          <div class="p-4 bg-[#16191E]">
+            <h3 class="text-lg mb-4">Order summary</h3>
+            <!-- Product -->
+            <div class="flex items-center mb-4">
+              <img
+                src="/Decade Collector/assets/images/SuperSentai/Boonboomger.webp"
+                alt="Product Image"
+                class="w-16 h-16 rounded-md mr-4"
+              />
+              <div class="flex-1">
+                <p class="text-sm">Riverside 100 20" Kids...</p>
+                <p class="text-xs">Model Code: 4480940</p>
+                <p class="text-sm">Quantity: 1</p>
+              </div>
+              <p class="text-sm">$159.00</p>
+            </div>
+
+            <!-- Voucher Code -->
+            <div class="border-t pt-4">
+              <p class="text-sm mb-3">Have a voucher code?</p>
+
+              <div class="flex items-center flex-col space-y-3">
+                <input
+                  class="bg-[#06070D] border-[#585858] border-2 text-white font-bold px-4 py-2 rounded-md w-80"
+                  type="text"
+                  placeholder="Voucher code"
+                />
+                <button
+                  class="bg-red-600 text-white font-bold px-4 py-2 rounded-lg w-80"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+
+            <!-- Price Details -->
+            <div class="mt-4">
+              <div class="flex justify-between text-sm">
+                <p>Subtotal</p>
+                <p>$159.00</p>
+              </div>
+              <div class="flex justify-between text-sm">
+                <p class="mt-2">Delivery</p>
+                <p class="mt-2">Free</p>
+              </div>
+              <div
+                class="flex justify-between text-sm border-b-4 border-white mt-5"
+              ></div>
+              <div class="mt-2 pt-2 flex justify-between text-lg">
+                <p>Total</p>
+                <p>$159.00</p>
+              </div>
+            </div>
+
+            <!-- Note -->
+            <p class="mt-4 text-xs">
+              *Delivery fee will be calculated after the checkout step is
+              completed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-[#16191E] mt-8 pt-9 pb-3">
+      <div class="flex justify-evenly items-center mx-14">
+        <div>
+          <a href="../home.html"
+            ><img
+              src="../assets/images/Logo/Logo-White.png"
+              alt="Logo"
+              class="w-[302px] h-[130px]"
+          /></a>
+        </div>
+        <div class="flex gap-28">
+          <div>
+            <h2 class="text-2xl font-bold">PAYMENT</h2>
+            <a href="#1" class="left-0 mt-3 flex gap-2 items-center"
+              ><img
+                src="../assets/images/Logo/KHQR.png"
+                alt="KHQR"
+                class="w-[40px] h-[30px] bg-white rounded-md"
+              />
+              <p>Bakong KHQR</p></a
+            >
+            <a href="#1" class="left-0 mt-3 flex gap-2 items-center"
+              ><img
+                src="../assets/images/Logo/aba.png"
+                alt="ABA"
+                class="w-[40px] h-[40px] rounded-md"
+              />
+              <p>ABA Bank</p></a
+            >
+            <a href="#1" class="left-0 mt-3 flex gap-2 items-center"
+              ><img
+                src="../assets/images/Logo/acleda.jpg"
+                alt="ACLEDA"
+                class="w-[40px] h-[40px] rounded-md"
+              />
+              <p>ACLEDA Bank Plc</p></a
+            >
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold">CONTACT US</h2>
+            <p>
+              Got a question or need help? Reach <br />
+              out to us at
+              <a href="../home.html" class="text-[#38A93B] underline"
+                >decadecollector.com</a
+              >
+              <br />
+              For returns, please use the following <br />
+              address: Box 351, Hamburg PA 19526
+            </p>
+            <div class="flex justify-evenly gap-6 mt-4 items-center mx-6">
+              <a href="#"
+                ><img src="../assets/icon/telegram.png" alt="Telegram"
+              /></a>
+              <a href="#"
+                ><img src="../assets/icon/messenger.png" alt="Messenger"
+              /></a>
+              <a href="#"><img src="../assets/icon/email.png" alt="Email" /></a>
+            </div>
+            <div class="flex justify-start gap-3 mt-5 items-center">
+              <p>Follow US</p>
+              <a href="#"
+                ><img
+                  src="../assets/icon/facebook.png"
+                  alt="Facebook"
+                  class="w-6 h-6"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../assets/icon/tiktok.png"
+                  alt="Tiktok"
+                  class="w-6 h-6"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../assets/icon/instagram.png"
+                  alt="Instagram"
+                  class="w-6 h-6"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../assets/icon/youtube.png"
+                  alt="Youtube"
+                  class="w-6 h-6"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-white text-sm mt-3">
+        © 2024 Deacde Collector. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
