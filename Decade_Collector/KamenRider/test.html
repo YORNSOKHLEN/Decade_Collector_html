@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <div class="max-w-7xl mx-auto py-8 px-4">
+      <h2 class="text-2xl font-bold mb-4">You also may like</h2>
+
+      <!-- Navigation Buttons -->
+      <div class="flex justify-between items-center mb-4">
+        <button id="prev" class="bg-gray-700 p-2 rounded hover:bg-gray-600">
+          &#8249; Previous
+        </button>
+        <button id="next" class="bg-gray-700 p-2 rounded hover:bg-gray-600">
+          Next &#8250;
+        </button>
+      </div>
+
+      <!-- Carousel Container -->
+      <div class="relative overflow-hidden w-full">
+        <div id="carousel" class="flex transition-transform duration-500">
+          <!-- Product Cards -->
+          <div class="bg-gray-800 rounded-lg p-4 flex-shrink-0 w-[19%] mx-1">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Product 1"
+              class="w-full h-32 object-cover rounded-md"
+            />
+            <h3 class="mt-2 font-semibold">SUPER BEST DX Decadriver</h3>
+            <p class="text-green-400">From $85</p>
+            <button
+              class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+            >
+              In Stock
+            </button>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-4 flex-shrink-0 w-[19%] mx-1">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Product 2"
+              class="w-full h-32 object-cover rounded-md"
+            />
+            <h3 class="mt-2 font-semibold">DX Double Driver 20th Ver</h3>
+            <p class="text-yellow-400">$85 (Preorder)</p>
+            <button
+              class="mt-2 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600"
+            >
+              Preorder
+            </button>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-4 flex-shrink-0 w-[19%] mx-1">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Product 3"
+              class="w-full h-32 object-cover rounded-md"
+            />
+            <h3 class="mt-2 font-semibold">DX Den-O Liner Form RideWatch</h3>
+            <p class="text-green-400">$20</p>
+            <button
+              class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+            >
+              In Stock
+            </button>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-4 flex-shrink-0 w-[19%] mx-1">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Product 4"
+              class="w-full h-32 object-cover rounded-md"
+            />
+            <h3 class="mt-2 font-semibold">DX Zi-O RideWatch II</h3>
+            <p class="text-green-400">From $38</p>
+            <button
+              class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+            >
+              In Stock
+            </button>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-4 flex-shrink-0 w-[19%] mx-1">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Product 5"
+              class="w-full h-32 object-cover rounded-md"
+            />
+            <h3 class="mt-2 font-semibold">SUPER BEST DX DienDriver</h3>
+            <p class="text-green-400">From $85</p>
+            <button
+              class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+            >
+              In Stock
+            </button>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-4 flex-shrink-0 w-[19%] mx-1">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Product 5"
+              class="w-full h-32 object-cover rounded-md"
+            />
+            <h3 class="mt-2 font-semibold">SUPER BEST DX DienDriver</h3>
+            <p class="text-green-400">From $85</p>
+            <button
+              class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+            >
+              In Stock
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const carousel = document.getElementById("carousel");
+      const next = document.getElementById("next");
+      const prev = document.getElementById("prev");
+
+      // Calculate card width dynamically (includes margin)
+      const cardWidth =
+        carousel.children[0].offsetWidth +
+        parseFloat(getComputedStyle(carousel.children[0]).marginRight) * 2;
+
+      const totalCards = carousel.children.length;
+      const visibleWidth = carousel.parentNode.offsetWidth;
+      const maxScroll = cardWidth * totalCards - visibleWidth;
+      let scrollPosition = 0;
+
+      // Handle Next Button Click
+      next.addEventListener("click", () => {
+        if (scrollPosition < maxScroll) {
+          scrollPosition = Math.min(maxScroll, scrollPosition + cardWidth);
+          carousel.style.transform = `translateX(-${scrollPosition}px)`;
+        }
+      });
+
+      // Handle Previous Button Click
+      prev.addEventListener("click", () => {
+        if (scrollPosition > 0) {
+          scrollPosition = Math.max(0, scrollPosition - cardWidth);
+          carousel.style.transform = `translateX(-${scrollPosition}px)`;
+        }
+      });
+    </script>
+  </body>
+</html>
