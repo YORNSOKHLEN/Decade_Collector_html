@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/flowbite@1.4.7/dist/flowbite.min.js"
+      defer
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -12,7 +16,7 @@
   </head>
   <body class="bg-[#06070C] text-white">
     <header
-      class="bg-[#06070D] fixed flex top-0 left-0 justify-between items-center w-full"
+      class="bg-[#06070D] fixed flex top-0 left-0 z-20 justify-between items-center w-full"
     >
       <div class="flex justify-between gap-10 items-center w-1/2 mx-4">
         <img src="../assets/icon/sort.png" alt="Menu" />
@@ -68,7 +72,7 @@
         <!-- Menu Items -->
         <div class="flex space-x-8 uppercase text-xl mx-7 py-3 items-center">
           <!-- Dropdown Menu -->
-          <div class="group">
+          <div class="group z-10">
             <div
               class="flex gap-2 items-center hover:text-[#38A93B] group-hover:text-[#38A93B]"
             >
@@ -139,7 +143,7 @@
           <div>
             <a href="#" class="hover:text-[#38A93B]">Jujutsu Kaisen</a>
           </div>
-          <div class="group">
+          <div class="group z-10">
             <div
               class="flex gap-2 items-center hover:text-[#38A93B] group-hover:text-[#38A93B]"
             >
@@ -221,7 +225,7 @@
               </div>
             </div>
           </div>
-          <div class="group">
+          <div class="group z-10">
             <div
               class="flex gap-2 items-center hover:text-[#38A93B] group-hover:text-[#38A93B]"
             >
@@ -279,7 +283,7 @@
               </div>
             </div>
           </div>
-          <div class="group">
+          <div class="group z-10">
             <div
               class="flex gap-2 items-center hover:text-[#38A93B] group-hover:text-[#38A93B]"
             >
@@ -345,16 +349,16 @@
             </div>
           </div>
         </div>
-        <div class="z-0">
+        <div>
           <div
-            class="flex flex-col justify-around gap-20 md:flex-row bg-white shadow-xl rounded-lg mx-auto mt-10 max-w-6xl"
+            class="flex flex-col justify-around gap-20 md:flex-row bg-[#06070C] shadow-xl rounded-lg mx-20 mt-10 max-w-6xl"
           >
             <!-- Image Carousel -->
-            <div class="md:w-1/2 p-4">
+            <div class="md:w-1/2 p-4 z-0">
               <div id="carousel" class="relative" data-carousel="static">
                 <!-- Carousel wrapper -->
                 <div
-                  class="relative h-[300px] overflow-hidden rounded-lg border-2 border-gray-300"
+                  class="relative h-[300px] overflow-hidden rounded-lg items-center border-2 border-gray-300"
                 >
                   <!-- Items -->
                   <div
@@ -364,7 +368,7 @@
                     <img
                       src="../assets/images/KamenRider/Decade/Decade1/Decade1.png"
                       class="block w-full h-[300px] object-contain"
-                      alt="Tent Image 1"
+                      alt="Image 1"
                     />
                   </div>
                   <div
@@ -374,7 +378,7 @@
                     <img
                       src="../assets/images/KamenRider/Decade/Decade1/Decade2.png"
                       class="block w-full h-[300px] object-contain"
-                      alt="Tent Image 2"
+                      alt="Image 2"
                     />
                   </div>
                   <div
@@ -384,7 +388,7 @@
                     <img
                       src="../assets/images/KamenRider/Decade/Decade1/Decade3.png"
                       class="block w-full h-[300px] object-contain"
-                      alt="Tent Image 3"
+                      alt="Image 3"
                     />
                   </div>
                   <div
@@ -392,9 +396,9 @@
                     data-carousel-item
                   >
                     <img
-                      src="./assets/tentshome/detailTent/detailTent4.jpg"
+                      src="../assets/images/KamenRider/Decade/Decade1/Decade4.png"
                       class="block w-full h-[300px] object-contain"
-                      alt="Tent Image 4"
+                      alt="Image 4"
                     />
                   </div>
                   <div
@@ -402,9 +406,9 @@
                     data-carousel-item
                   >
                     <img
-                      src="./assets/tentshome/detailTent/detailTent5.jpg"
+                      src="../assets/images/KamenRider/Decade/Decade1/Decade5.png"
                       class="block w-full h-[300px] object-contain"
-                      alt="Tent Image 5"
+                      alt="Image 5"
                     />
                   </div>
                   <div
@@ -412,9 +416,9 @@
                     data-carousel-item
                   >
                     <img
-                      src="./assets/tentshome/detailTent/detailTent6.jpg"
+                      src="../assets/images/KamenRider/Decade/Decade1/Decade6.png"
                       class="block w-full h-[300px] object-contain"
-                      alt="Tent Image 6"
+                      alt="Image 6"
                     />
                   </div>
                   <div
@@ -422,9 +426,9 @@
                     data-carousel-item
                   >
                     <img
-                      src="./assets/tentshome/detailTent/detailTent7.jpg"
+                      src="../assets/images/KamenRider/Decade/Decade1/Decade7.png"
                       class="block w-full h-[300px] object-contain"
-                      alt="Tent Image 7"
+                      alt="Image 7"
                     />
                   </div>
                   <div
@@ -432,9 +436,9 @@
                     data-carousel-item
                   >
                     <img
-                      src="./assets/tentshome/detailTent/detailTent8.jpg"
+                      src="../assets/images/KamenRider/Decade/Decade1/Decade8.png"
                       class="block w-full h-[300px] object-contain"
-                      alt="Tent Image 8"
+                      alt="Image 8"
                     />
                   </div>
                   <div
@@ -442,9 +446,19 @@
                     data-carousel-item
                   >
                     <img
-                      src="./assets/tentshome/detailTent/detailTent9.jpg"
+                      src="../assets/images/KamenRider/Decade/Decade1/Decade9.png"
                       class="block w-full h-[300px] object-contain"
-                      alt="Tent Image 9"
+                      alt="Image 9"
+                    />
+                  </div>
+                  <div
+                    class="hidden duration-700 ease-in-out"
+                    data-carousel-item
+                  >
+                    <img
+                      src="../assets/images/KamenRider/Decade/Decade1/Decade10.png"
+                      class="block w-full h-[300px] object-contain"
+                      alt="Image 10"
                     />
                   </div>
                   <!-- Add more images as necessary -->
@@ -505,126 +519,83 @@
             </div>
 
             <!-- Product Details -->
-            <div class="md:w-1/2 p-6">
-              <h2 class="text-2xl font-bold text-gray-800">
-                Easy Camp Spirit 200 2 Man Tent <br />
-                Rustic Green
-              </h2>
-              <p class="text-lg text-black font-semibold mt-2">$54.95</p>
-              <p class="text-sm text-[#019B7E] mt-1">In stock</p>
-              <div class="flex gap-24">
-                <div class="mt-4">
-                  <label
-                    for="size"
-                    class="block text-sm font-medium text-gray-700"
-                  >
-                    Size
-                  </label>
-                  <select
-                    id="size"
-                    name="size"
-                    class="block mt-5 border-2 px-4 py-1 border-gray-500 shadow-sm items-center"
-                  >
-                    <option value="No Size">No Size</option>
-                    <option value="Small">Small</option>
-                    <option value="Medium">Medium</option>
-                    <option value="Large">Large</option>
-                  </select>
+            <div class="md:w-1/2 p-6 mr-36">
+              <div class="flex justify-between items-center">
+                <div
+                  class="uppercase py-1 px-6 mb-3 flex rounded-sm bg-[#38A93B]"
+                >
+                  in stock
                 </div>
-
-                <div class="mt-4 items-center">
-                  <h2 class="block text-sm font-medium text-gray-700">
-                    Quantity
-                  </h2>
+                <div class="text-xl flex gap-2">
+                  <button id="top4">
+                    <i class="fas fa-heart" onclick="set_color4()"></i>
+                  </button>
+                  <button>
+                    <i class="fas fa-link" onclick=""></i>
+                  </button>
+                </div>
+              </div>
+              <div class="text-2xl">
+                DX Neo Decade Driver & K-Touch 21
+                <a
+                  href="./KamenRiderDecade.html"
+                  class="uppercase text-base hover:text-[#38A93B]"
+                  >Series : Kamen Rider Decade</a
+                >
+              </div>
+              <div class="flex gap-10">
+                <div class="mt-4 items-center flex gap-8">
+                  <div>
+                    <h2 class="block text-base font-normal mt-5 text-white">
+                      Quantity
+                    </h2>
+                  </div>
                   <div
-                    class="flex items-center justify-center text-black mt-5 border-2 border-gray-500"
+                    class="flex text-base items-center justify-center text-white mt-5 border-2 border-gray-400"
                   >
-                    <button id="decrement" class="px-3 py-1 rounded-l">
+                    <button id="decrement" class="px-3 py-2 rounded-l">
                       -
                     </button>
-                    <span id="quantity" class="px-3 py-1">1</span>
-                    <button id="increment" class="px-3 py-1 rounded-r">
+                    <span id="quantity" class="px-3 py-2">1</span>
+                    <button id="increment" class="px-3 py-2 rounded-r">
                       +
                     </button>
+                  </div>
+                </div>
+                <div class="mt-4 items-center flex gap-10">
+                  <div class="flex gap-8 text-base font-normal mt-5 text-white">
+                    Price : <span class="font-bold">$130.00</span>
                   </div>
                 </div>
               </div>
 
               <div class="mt-6 flex gap-20">
                 <button
-                  class="px-4 py-2 text-white bg-[#019B7E] rounded-md hover:bg-green-700 focus:ring-2 focus:ring-[#019B7E] focus:outline-none"
+                  class="px-4 py-2 text-white bg-[#38A93B] rounded-md hover:bg-green-600 focus:ring-2 focus:ring-[#019B7E] focus:outline-none"
                 >
                   Add to Basket
                 </button>
-                <button
-                  class="px-4 py-2 text-white bg-[#019B7E] rounded-md hover:bg-green-700 focus:ring-2 focus:ring-[#019B7E] focus:outline-none"
-                >
-                  Ask a Question
-                </button>
               </div>
-              <p class="mt-4 text-xs text-gray-500">SKU: 330068</p>
             </div>
           </div>
-          <div class="bg-white mt-3">
-            <div class="flex justify-center w-full mt-4">
+          <div>
+            <div class="flex justify-center w-full my-6">
               <h2
-                class="rounded-2xl border-2 uppercase font-bold text-[#019B7E] border-[#019B7E] px-5"
+                class="rounded-2xl border-2 uppercase font-bold text-[#38A93B] border-[#38A93B] px-5"
               >
                 Description
               </h2>
             </div>
-            <div class="mx-3 mt-2">
-              <h2 class="text-xl">Product Description</h2>
-              <p class="text-gray-700 text-sm mt-1">
-                A neat, fast pitching two pole tunnel design of inner tent and
-                flysheet with a front pole for extra headroom, Spirit 200 is
-                ideal for two young outdoor adventurers. Features include a
-                detachable groundsheet in the generous porch area for handy gear
-                storage and three vents for effective ventilation. For
-                convenience, there is a lantern hanging point and an organiser
-                pocket.
-              </p>
-              <p class="text-gray-700 mt-1">
-                <span class="text-black">Type of tent:</span> Tunnel
-                <br />
-                <span class="text-black"> Flysheet:</span> WeatherGuard 2000,
-                180T polyester PU coated, fire retardant <br />
-                <span class="text-black"> Taping: </span>
-                Taped seams <br />
-                <span class="text-black">Hydrostatic Head:</span>
-                2000 mm <br />
-                <span class="text-black">Sleeps:</span>
-                2 <br />
-                <span class="text-black">Poles:</span>
-                EnduraFlex, fibreglass 7.9 mm <br />
-                <span class="text-black">Inner tent:</span>
-                Breathable polyester <br />
-                <span class="text-black">Floor Inner:</span>
-                Polyethylene <br />
-                <span class="text-black">Groundsheet:</span>
-                Polyethylene <br />
-                <span class="text-black">Colour:</span>
-                Blue & Sand <br />
-                <span class="text-black">Textile Fiber Composition:</span>
-                <span class="text-black">Flysheet:</span>
-                100% <span class="text-black">Polyester Inner tent:</span> 100%
-                <span class="text-black">Polyester Mesh:</span>
-                100%
-                <br />
-                <span class="text-black">Polyester Pack size:</span>
-                60 x 18 cm <br />
-                <span class="text-black">Weight:</span>
-                2.9 kg
-              </p>
-              <p class="text-gray-700 text-sm mt-1">
-                Be aware that (UV) ultraviolet rays will damage your tent if you
-                expose it to direct sunlight for longer periods of time. Easy
-                Camp products are made for camping use which is normally 2-5
-                weeks usage a year. They are not designed for permanent usage.
-                Camping near the sea or lake can further enhance the effect of
-                UV radiation. The same applies to poles and metal parts.
-              </p>
-            </div>
+            <p class="text-gray-300 flex justify-center">
+              From Rider Time Zi-O vs Decade comes the re-release Neo Decade
+              Driver AND the premiere of the K-Touch 21! The set includes cards
+              from W to Zero One!
+            </p>
+            <p class="text-gray-300 flex justify-center">
+              <span class="font-semibold">NOTE</span>: These cards are not
+              guaranteed to be compatible with previous DX releases and vice
+              versa.
+            </p>
           </div>
           <div class="container w-full mx-auto py-8 px-16 mt-5">
             <div class="relative">
@@ -939,39 +910,6 @@
         behavior: "smooth",
       });
     });
-
-    // Show Modal
-    const profileIcon = document.getElementById("profileIcon");
-    const profileModal = document.getElementById("profileModal");
-    const registrationForm = document.getElementById("registrationForm");
-    const signInForm = document.getElementById("signInForm");
-    const carousel = document.getElementById("default-carousel");
-
-    profileIcon.addEventListener("click", () => {
-      toggleModal("profileModal");
-    });
-
-    function toggleModal(modalID) {
-      const modal = document.getElementById(modalID);
-      modal.classList.toggle("hidden");
-
-      // Disable pointer events on the carousel when the modal is open
-      if (!modal.classList.contains("hidden")) {
-        carousel.style.pointerEvents = "none";
-      } else {
-        carousel.style.pointerEvents = "auto";
-      }
-    }
-
-    function toggleVisibility(event, id) {
-      const element = document.getElementById(id);
-      if (element.classList.contains("hidden")) {
-        element.classList.remove("hidden");
-      } else {
-        element.classList.add("hidden");
-      }
-    }
-
     // Select elements
     const decrementButton = document.getElementById("decrement");
     const incrementButton = document.getElementById("increment");
