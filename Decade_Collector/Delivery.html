@@ -3,25 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkout Page</title>
+    <title>Order Summary</title>
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css    "
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
   </head>
-
-  <body class="bg-[#06070D] text-white">
-    <div class="max-w-7xl mx-auto pt-8 pb-3 flex">
-      <!-- Order Summary -->
+  <body class="bg-black text-white flex-col items-center">
+    <div class="w-[1200px] flex mt-8 gap-8">
+      <!-- Left Section: Order Summary -->
       <div class="w-1/2 border-r border-gray-700 pr-8 mx-5">
         <div class="flex mb-6 gap-40">
           <a href="./home.html">
@@ -30,14 +34,13 @@
             ></i
           ></a>
           <!-- <img
-            src="./assets/images/Logo-White.png"
-            alt="Decade Collector Logo"
-            class="h-24 top-0"
-          /> -->
+              src="./assets/images/Logo-White.png"
+              alt="Decade Collector Logo"
+              class="h-24 top-0"
+            /> -->
           <h2 class="text-xl font-semibold mb-6">Order Summary</h2>
         </div>
-
-        <!-- Item 1 -->
+        <!-- Product Items -->
         <div class="mb-4 flex items-center justify-between mx-5">
           <div class="flex gap-5">
             <img
@@ -81,7 +84,8 @@
             <i class="fas fa-trash mt-5"></i>
           </div>
         </div>
-        <!-- Discount Code -->
+
+        <!-- Gift Card / Discount -->
         <div class="mb-4 mx-5">
           <label for="discount-code" class="block text-sm font-medium mb-1"
             >Gift Card / Discount code</label
@@ -97,7 +101,7 @@
             </button>
           </div>
         </div>
-        <!-- Pricing Details -->
+        <!-- Totals -->
         <div class="text-sm mb-2 mx-5">
           <div class="flex justify-between">
             <span>Subtotal</span>
@@ -112,112 +116,81 @@
             <span class="text-[#38A93B]">FREE</span>
           </div>
         </div>
-        <div class="flex justify-between text-lg font-semibold mx-5">
-          <span>Total due</span>
-          <span class="text-blue-500">$164.23</span>
-        </div>
       </div>
 
-      <!-- Shipping Details -->
-      <div class="w-1/2 pl-8 mr-4">
-        <!-- Progress Steps -->
+      <!-- Right Section: Delivery Options -->
+      <div class="w-1/2">
         <div class="mb-6 flex items-center text-gray-300 justify-between">
           <span class="mr-4 text-[#38A93B]">Shipping</span>
-          <div>
+          <div class="text-[#38A93B]">
             <i class="fa-solid fa-minus fa-lg"></i>
             <i class="fa-solid fa-circle-check fa-lg"></i>
             <i class="fa-solid fa-minus fa-lg"></i>
           </div>
-          <span>Delivery</span>
-          <div>
+          <span class="text-[#38A93B]">Delivery</span>
+          <div class="">
             <i class="fa-solid fa-minus fa-lg"></i>
             <i class="fa-solid fa-circle-check fa-lg"></i>
             <i class="fa-solid fa-minus fa-lg"></i>
           </div>
           <span>Payment</span>
         </div>
-        <!-- Contact Details -->
-        <h2 class="text-xl font-semibold mb-4">Contact Details</h2>
-        <form>
-          <div class="grid grid-cols-2 gap-4 mb-4">
-            <input
-              type="text"
-              placeholder="First Name"
-              class="bg-gray-800 border border-gray-700 text-white px-3 py-2 rounded"
-            />
-            <input
-              type="text"
-              placeholder="Last Name"
-              class="bg-gray-800 border border-gray-700 text-white px-3 py-2 rounded"
-            />
-          </div>
-          <!-- <div class="mb-4">
-            <input
-              type="email"
-              placeholder="Email"
-              class="w-full bg-gray-800 border border-gray-700 text-white px-3 py-2 rounded"
-            />
-          </div> -->
-          <div class="mb-6">
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              class="w-full bg-gray-800 border border-gray-700 text-white px-3 py-2 rounded"
-            />
-          </div>
-          <!-- Shipping Details -->
-          <h2 class="text-xl font-semibold mb-4">Shipping Details</h2>
-          <div class="rounded mb-6">
-            <div class="mb-4">
-              <input
-                type="text"
-                placeholder="Flat/House no"
-                class="w-full bg-gray-800 border border-gray-700 text-white px-3 py-2 rounded"
-              />
-            </div>
-            <div class="mb-4">
-              <input
-                type="text"
-                placeholder="Address"
-                class="w-full bg-gray-800 border border-gray-700 text-white px-3 py-2 rounded"
-              />
-            </div>
-            <div class="grid grid-cols-2 gap-4 mb-4">
-              <input
-                type="text"
-                placeholder="City"
-                class="bg-gray-800 border border-gray-700 text-white px-3 py-2 rounded"
-              />
-              <input
-                type="text"
-                placeholder="State"
-                class="bg-gray-800 border border-gray-700 text-white px-3 py-2 rounded"
-              />
-            </div>
-            <div class="grid grid-cols-2 gap-4 mb-4"></div>
+        <h2 class="text-xl font-semibold mb-6">Delivery Options</h2>
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
             <div class="flex items-center">
               <input
-                type="checkbox"
-                id="same-address"
-                class="bg-gray-800 border border-gray-700 rounded text-blue-500 focus:ring-0 focus:ring-offset-0"
+                type="radio"
+                name="delivery"
+                id="standard"
+                class="form-radio text-blue-500"
               />
-              <label for="same-address" class="ml-2 text-sm"
-                >My shipping and Billing address are the same</label
+              <label for="standard" class="ml-2 text-white"
+                >Standard 5-7 Business Days</label
               >
             </div>
+            <p class="text-green-500 font-medium">FREE</p>
           </div>
-          <!-- Continue Button -->
-          <button
-            type="submit"
-            class="w-full bg-[#38A93B] text-white py-2 rounded font-semibold"
-          >
+          <div class="flex items-center justify-between">
+            <div class="flex items-center">
+              <input
+                type="radio"
+                name="delivery"
+                id="business"
+                class="form-radio text-blue-500"
+              />
+              <label for="business" class="ml-2 text-white"
+                >2-4 Business Days</label
+              >
+            </div>
+            <p class="text-white font-medium">+$5</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center">
+              <input
+                type="radio"
+                name="delivery"
+                id="same-day"
+                class="form-radio text-blue-500"
+              />
+              <label for="same-day" class="ml-2 text-white"
+                >Same day delivery</label
+              >
+            </div>
+            <p class="text-white font-medium">+$15</p>
+          </div>
+        </div>
+        <!-- Buttons -->
+        <div class="flex items-center justify-between mt-8">
+          <button class="px-8 py-3 bg-[#38A93B] text-white font-medium rounded">
+            Back
+          </button>
+          <button class="px-8 py-3 bg-[#38A93B] text-white font-medium rounded">
             Continue
           </button>
-        </form>
+        </div>
       </div>
     </div>
-
-    <!-- Footer -->
 
     <footer class="bg-[#16191E] mt-8 pt-9 pb-3">
       <div class="flex justify-evenly items-center mx-14">
